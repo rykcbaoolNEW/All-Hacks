@@ -9,6 +9,7 @@ Join The Discord For Proxys
 https://discord.gg/pJt627Be
 
 1. go to blooket
+![image](https://user-images.githubusercontent.com/98996547/223779734-252170ef-0e02-4231-94b0-8e4a017d354b.png)
 
 
 
