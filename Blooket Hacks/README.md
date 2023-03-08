@@ -7,3 +7,5 @@ blooket hacks made by playstation451
 
 Join The Discord For Proxys
 https://discord.gg/pJt627Be
+
+#How to Use
