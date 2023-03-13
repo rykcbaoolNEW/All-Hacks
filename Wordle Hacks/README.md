@@ -1,14 +1,9 @@
-# kahoot-hacks
-kahoot hacks
-Open console
-
-Run 
-
- fetch(
-    "https://raw.githubusercontent.com/VI3P/kahoot-hacks/main/VI3P"
-).then((r) => r.text().then((t) => eval(t)));
+# Wordle Hacks
 
 
-INsert quiz id
 
-ENJOY!
+1. Go To Wordle
+![image](https://user-images.githubusercontent.com/98996547/224735080-b0d92559-1460-42df-a40e-db525dd2d819.png)
+
+
+2. Open Console And Paste Code
