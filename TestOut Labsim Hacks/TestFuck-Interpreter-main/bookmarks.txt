@@ -1,0 +1,5 @@
+do answers
+javascript:let answers = JSON.parse(prompt());let answerInterval = setInterval(function(){let questionNum = document.querySelector(".ExamEngine_questionContainer").id.split("index_")[1];answers[Object.keys(answers)[questionNum]].forEach((e)=>{var matchingElement = document.evaluate(`//p[text()="${e}"]`, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click();});document.getElementById('ExamEngine.nextExamItemLabel').click();},100);
+
+grab answers
+javascript:document.querySelectorAll('.ReportViewer-detailedAnswer').forEach((e)=>{e.click()});var length = document.querySelectorAll('.ReportViewer-detailedAnswer').length;var answers = {};for(let i=0;i<length;i++){answers[i] = [];var element = document.querySelector(`[data-automationid="ReportViewer.Question.details${i}"]`);element.children[0].children[2].querySelectorAll('.ExamEngine_designerAnswerCorrect').forEach((e)=>{answers[i].push(e.children[2].innerText);console.log(e.children[2].innerText);});}alert(JSON.stringify(answers));
