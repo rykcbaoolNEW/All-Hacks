@@ -7,3 +7,6 @@ Star this repository
 
 Want me to add hacks reply to this issue
 https://github.com/playstation452/All-Hacks/issues/2
+
+
+MOST OF THE HACKS WILL USE CONSOLE IF YOUR SCHOOL BLOCKS IT THEN IDK
