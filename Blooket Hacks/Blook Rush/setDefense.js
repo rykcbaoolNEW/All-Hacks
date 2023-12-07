@@ -1,58 +1,40 @@
-(async () => {
-    let n = document.createElement('iframe');
-    document.body.append(n);
-    window.alert = n.contentWindow.alert.bind(window);
-    window.prompt = n.contentWindow.prompt.bind(window);
-    window.confirm = n.contentWindow.confirm.bind(window);
-    n.remove();
-            function reactHandler() {
-                return Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner;
-            };
 
-            if (window.location.pathname != '/play/rush') {
-                alert('You must be in a blook rush game mode to use this hack!');
-            } else {
-                let e = reactHandler();
-                e.stateNode.props.firebase.setVal({
-                    id: e.stateNode.props.client.hostId,
-                    path: 'c/' + e.stateNode.props.client.name + '/d',
-                    val: Number(parseFloat(prompt('How much defense do you want?')))
-                });
+/* THE UPDATE CHECKER IS ADDED DURING COMMIT PREP, THERE MAY BE REDUNDANT CODE, DO NOT TOUCH */
 
-                alert('Defense set!');
-            };
-})();
-
-
-function footer() {
-    let element = document.createElement('div');
-
-    element.style = `font-family: "Nunito", sans-serif; font-size: 14px; height: 65px; width: 175px; border: 4px solid rgb(15, 15, 15); background: rgb(240, 240, 240); position: absolute; top: 20x; left: 20px; border-radius: 10px; color: rgb(0, 0, 0); text-align: center;`;
-    element.innerHTML = `<p>Made by gliz <br> My <a style="color: #0000ff;" href="https://twitter.com/glizuwu" target="_blank">twitter</a></p>`;
-    document.body.appendChild(element);
-
-    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    element.onmousedown = ((e = window.event) => {
-        e.preventDefault();
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        document.onmouseup = (() => {
-            document.onmouseup = null;
-            document.onmousemove = null;
-        });
-        document.onmousemove = ((e) => {
-            e = e || window.event;
-            e.preventDefault();
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            let top = (element.offsetTop - pos2) > 0 ? (element.offsetTop - pos2) : 0;
-            let left = (element.offsetLeft - pos1) > 0 ? (element.offsetLeft - pos1) : 0;
-            element.style.top = top + "px";
-            element.style.left = left + "px";
+(() => {
+    const cheat = (async () => {
+        let i = document.createElement('iframe');
+        document.body.append(i);
+        window.prompt = i.contentWindow.prompt.bind(window);
+        i.remove();
+        let numDefense = Math.min(Number(parseInt(prompt("How much defense do you want? (Max 4)"))), 4);
+        let { stateNode } = Object.values((function react(r = document.querySelector("body>div")) { return Object.values(r)[1]?.children?.[0]?._owner.stateNode ? r : react(r.querySelector(":scope>div")) })())[1].children[0]._owner;
+        stateNode.setState({ numDefense });
+        stateNode.isTeam ? stateNode.props.liveGameController.setVal({
+            path: `a/${stateNode.props.client.name}/d`,
+            val: numDefense
+        }) : stateNode.props.liveGameController.setVal({
+            path: `c/${stateNode.props.client.name}/d`,
+            val: numDefense
         });
     });
-};
-
-footer();
+    let img = new Image;
+    img.src = "https://raw.githubusercontent.com/05Konz/Blooket-Cheats/main/autoupdate/timestamps/rush/setDefense.png?" + Date.now();
+    img.crossOrigin = "Anonymous";
+    img.onload = function() {
+        const c = document.createElement("canvas");
+        const ctx = c.getContext("2d");
+        ctx.drawImage(img, 0, 0, this.width, this.height);
+        let { data } = ctx.getImageData(0, 0, this.width, this.height), decode = "", last;
+        for (let i = 0; i < data.length; i += 4) {
+            let char = String.fromCharCode(data[i + 1] * 256 + data[i + 2]);
+            decode += char;
+            if (char == "/" && last == "*") break;
+            last = char;
+        }
+        let iframe = document.querySelector("iframe");
+        const [_, time, error] = decode.match(/LastUpdated: (.+?); ErrorMessage: "(.+?)"/);
+        if (parseInt(time) <= 1693429947579 || iframe.contentWindow.confirm(error)) cheat();
+    }
+    img.onerror = img.onabort = () => (img.src = null, cheat());
+})();
