@@ -4,6 +4,8 @@ most of these uses browser dev console
 
 for the idiots this is not deployable you need to go in the files and copy the code
 
+report a bug here https://github.com/playstation452/All-Hacks/milestone/1 
+
 ## Star History
 
 <a href="https://star-history.com/#playstation452/All-Hacks&Date">
