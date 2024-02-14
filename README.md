@@ -1,4 +1,4 @@
-# All-Hacks
+# All-Hacks (KAHOOT HACKS UPDATED!!!!)
 
 most of these uses browser dev console
 
