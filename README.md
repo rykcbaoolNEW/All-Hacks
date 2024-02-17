@@ -1,4 +1,4 @@
-# All-Hacks (KAHOOT HACKS UPDATED!!!!)
+# All-Hacks (BLOOKET HACKS UPDATED!!!!)
 
 most of these uses browser dev console
 
@@ -7,6 +7,10 @@ for the idiots this is not deployable you need to go in the files and copy the c
 report a bug  [here](https://github.com/playstation452/All-Hacks/milestone/1)
 
 suggest a hack  [here](https://github.com/playstation452/All-Hacks/milestone/2)
+
+# credits
+
+######### 05konz for blooket hacks
 
 ## Star History
 
