@@ -10,7 +10,7 @@ suggest a hack  [here](https://github.com/playstation452/All-Hacks/milestone/2)
 
 # credits
 
-######### 05konz for blooket hacks
+05konz for blooket hacks
 
 ## Star History
 
