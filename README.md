@@ -12,6 +12,10 @@ suggest a hack  [here](https://github.com/playstation452/All-Hacks/milestone/2)
 
 05konz for blooket hacks
 
+## advertisement
+
+go look at my minecraft 1.12.2 anarchy hack client  [here](https://github.com/wdnc-mc-client/WDNC-Client)
+
 ## Star History
 
 <a href="https://star-history.com/#playstation452/All-Hacks&Date">
