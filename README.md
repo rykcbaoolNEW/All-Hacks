@@ -12,6 +12,8 @@ suggest a hack  [here](https://github.com/playstation452/All-Hacks/milestone/2)
 
 05konz for blooket hacks
 
+my discord is playstation451#9730 dm me if you want your ad here
+
 ## advertisement
 
 go look at my minecraft 1.12.2 anarchy hack client  [here](https://github.com/wdnc-mc-client/WDNC-Client)
