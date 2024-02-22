@@ -1,4 +1,4 @@
-# All-Hacks (BLOOKET HACKS UPDATED!!!!)
+# All-Hacks
 
 most of these uses browser dev console
 
