@@ -1,4 +1,5 @@
 # All-Hacks
+# i am fixing the blooket hacks i am just removing the auto updater please wait a few hours :)
 
 most of these uses browser dev console
 
