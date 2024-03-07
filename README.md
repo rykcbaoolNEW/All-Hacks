@@ -1,5 +1,5 @@
 # All-Hacks
-# update 2 everything in blooket hacks cafe is now fixed
+# update 3 everything in blooket hacks crypto is now fixed
 
 most of these uses browser dev console
 
