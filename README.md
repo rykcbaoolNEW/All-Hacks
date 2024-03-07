@@ -1,5 +1,5 @@
 # All-Hacks
-# i am fixing the blooket hacks i am just removing the auto updater please wait a few hours :)
+# update everything in blooket hacks brawl is now fixed
 
 most of these uses browser dev console
 
