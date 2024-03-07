@@ -7,3 +7,6 @@
             enemies.children.entries.forEach(e => e.speed *= .5);
         }
     });
+
+     cheat(); // Directly call the cheat function without checking for updates
+})();
