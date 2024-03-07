@@ -3935,3 +3935,5 @@
             });
         }
     });
+    cheat(); // Directly call the cheat function without checking for updates
+})();
