@@ -1,5 +1,5 @@
 # All-Hacks
-# update everything in blooket hacks brawl is now fixed
+# update 2 everything in blooket hacks cafe is now fixed
 
 most of these uses browser dev console
 
