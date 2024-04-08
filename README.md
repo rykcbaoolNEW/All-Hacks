@@ -1,5 +1,5 @@
 # All-Hacks
-# update 3 everything in blooket hacks crypto is now fixed
+## i will not be updating this as much i have too much pressure on me right now i have a 45 in one of my classes. i might come back after i bring the grade up
 
 most of these uses browser dev console
 
