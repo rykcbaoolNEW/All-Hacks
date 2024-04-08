@@ -1,5 +1,5 @@
 # All-Hacks
-## i will not be updating this as much i have too much pressure on me right now i have a 45 in one of my classes. i might come back after i bring the grade up
+## i will not be updating this as much i have too much pressure on me right now i have a 45 in one of my classes. i might come back after i bring the grade up. i am sorry for not updating the blooket hacks all the way.
 
 most of these uses browser dev console
 
